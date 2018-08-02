@@ -1,0 +1,6 @@
+typings/
+build/
+node_modules/
+**/*.ngfactory.ts
+.vscode
+npm-debug.log
