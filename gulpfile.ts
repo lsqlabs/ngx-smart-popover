@@ -238,11 +238,19 @@ export class Gulpfile {
     }
 
     /**
+     * Increments version, creates a package, and publishes it to npm.
+     */
+    @SequenceTask()
+    bumpVersionThenPublish() {
+        return ['bumpPatchVersion', 'package', 'npmPublish'];
+    }
+
+    /**
      * Creates a package and publishes it to npm.
      */
     @SequenceTask()
     publish() {
-        return ['bumpPatchVersion', 'package', 'npmPublish'];
+        return ['package', 'npmPublish'];
     }
 
     // -------------------------------------------------------------------------

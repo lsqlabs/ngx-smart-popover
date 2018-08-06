@@ -1,0 +1,37 @@
+{
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "block-closing-brace-empty-line-before": "never",
+        "block-closing-brace-newline-after": "always",
+        "block-closing-brace-newline-before": "always-multi-line",
+        "block-closing-brace-space-before": "always-single-line",
+        "block-no-empty": true,
+        "block-opening-brace-space-after": "always-single-line",
+        "block-opening-brace-space-before": "always",
+        "color-no-invalid-hex": true,
+        "declaration-block-no-duplicate-properties": true,
+        "function-calc-no-unspaced-operator": true,
+        "function-linear-gradient-no-nonstandard-direction": true,
+        "max-empty-lines": [
+            1,
+            {
+                "ignore": [
+                    "comments"
+                ]
+            }
+        ],
+        "no-duplicate-at-import-rules": true,
+        "no-duplicate-selectors": true,
+        "no-extra-semicolons": true,
+        "no-missing-end-of-source-newline": true,
+        "property-no-unknown": true,
+        "scss/at-else-if-parentheses-space-before": "always",
+        "scss/dollar-variable-colon-space-after": "always",
+        "scss/dollar-variable-colon-space-before": "never",
+        "string-no-newline": true,
+        "string-quotes": "single",
+        "unit-no-unknown": true
+    }
+}
