@@ -8,7 +8,7 @@ Please note we have a code of conduct, please follow it in all of your interacti
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are in the proper dependency object in the `package.json` file.
-2. Update the README.md with any potential changes to the interface
+2. Update the README.md with any potential changes to the interface.
 3. Increase the version numbers in `package.json` and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
 4. If any unit tests exist, run the test suite to ensure they are still passing. Add unit tests for your added logic as appropriate.
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
