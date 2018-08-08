@@ -201,11 +201,11 @@ export class Gulpfile {
 
     /**
      * This task will replace all typescript code blocks in the README (since npm does not support typescript syntax
-     * highlighting) and copy this README file into the package folder.
+     * highlighting) and copy this README file and CONTRIBUTING file into the package folder.
      */
     @Task()
     packageReadmeFile() {
-        return gulp.src('./README.md')
+        return gulp.src(['./README.md', './CONTRIBUTING.md'])
             .pipe(replace(/```typescript([\s\S]*?)```/g, '```javascript$1```'))
             .pipe(gulp.dest('./build/package'));
     }
