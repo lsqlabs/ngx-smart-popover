@@ -58,6 +58,7 @@ export class PopoverDirective implements OnChanges {
     // Inputs / Outputs
     // -------------------------------------------------------------------------
     @Input('popover') public content: string | PopoverContentComponent;
+    @Input() public popoverSize: 'small' | 'medium-small' | 'medium' | 'large' | 'auto' = 'small';
     @Input() public popoverDisabled: boolean;
     @Input() public popoverAnimation: boolean;
     @Input() public popoverPlacement: PopoverPlacement;
@@ -173,6 +174,7 @@ export class PopoverDirective implements OnChanges {
             if (this.popoverCloseOnMouseOutside !== undefined) {
                 popover.closeOnMouseOutside = this.popoverCloseOnMouseOutside;
             }
+            popover.size = this.popoverSize;
 
             popover.onCloseFromOutside.subscribe(() => this.hide());
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time
@@ -197,6 +199,7 @@ export class PopoverDirective implements OnChanges {
             if (this.popoverCloseOnMouseOutside !== undefined) {
                 popover.closeOnMouseOutside = this.popoverCloseOnMouseOutside;
             }
+            popover.size = this.popoverSize;
 
             popover.onCloseFromOutside.subscribe(() => this.hide());
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time

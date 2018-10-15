@@ -1,6 +1,6 @@
 {
   "name": "ngx-smart-popover",
-  "version": "0.0.11",
+  "version": "1.0.0",
   "description": "Smart popover control for your Angular2+ applications using bootstrap v4.",
   "scripts": {
     "tsc": "ngc -p tsconfig-aot.json",
