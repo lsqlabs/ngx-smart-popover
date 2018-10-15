@@ -57,6 +57,7 @@ Example of usage with dynamic html content:
 
 * `<div popover>`:
     * `popover="string"` The message to be shown in the popover.
+    * `popoverSize="small|medium-small|medium|large|auto"` Adjusts the width of the popver.
     * `popoverTitle="string"` Popover title text.
     * `popoverPlacement="top|bottom|left|right|top-right|top-left|bottom-right|bottom-left"` Indicates where the popover should be placed. When using **"auto"** modifier, will show in opposite direction if not enough room. Default is **"bottom"**.
     * `[popoverDisabled]="true|false"` Indicates if popover should be disabled. If popover is disabled then it will not be shown. Default is **false**

@@ -55,7 +55,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
     @Input() public animation = true;
     @Input() public closeOnClickOutside = false;
     @Input() public closeOnMouseOutside = false;
-    @Input() public size: 'small' | 'medium-small' | 'medium' | 'large' = 'small';
+    @Input() public size: 'small' | 'medium-small' | 'medium' | 'large' | 'auto' = 'small';
 
     // -------------------------------------------------------------------------
     // Properties
