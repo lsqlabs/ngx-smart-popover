@@ -1,0 +1,37 @@
+{
+  "name": "ngx-smart-popover",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsqlabs/ngx-smart-popover.git"
+  },
+  "keywords": [
+    "popover",
+    "angular",
+    "angular2",
+    "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "ng",
+    "ngx",
+    "ng2",
+    "smart",
+    "bootstrap",
+    "tooltip"
+  ],
+  "author": {
+    "name": "lsqlabs",
+    "email": "developers@lsq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lsqlabs/ngx-smart-popover/issues"
+  },
+  "homepage": "https://github.com/lsqlabs/ngx-smart-popover#readme",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "bootstrap": "^4.0.0"
+  }
+}
