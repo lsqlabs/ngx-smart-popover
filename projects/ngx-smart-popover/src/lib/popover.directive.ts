@@ -29,12 +29,9 @@ export class PopoverPlacement {
 }
 
 /**
- * @group Basic Toolkit
- * @component Popover Directive
- *
- * @export
- * @class PopoverDirective
- */
+* @group Basic Toolkit
+* @component Popover Directive
+*/
 @Directive({
     selector: '[popover]',
     exportAs: 'popover'
@@ -51,7 +48,7 @@ export class PopoverDirective implements OnChanges {
     // Constructor
     // -------------------------------------------------------------------------
     constructor(protected viewContainerRef: ViewContainerRef,
-                protected resolver: ComponentFactoryResolver) {
+        protected resolver: ComponentFactoryResolver) {
     }
 
     // -------------------------------------------------------------------------
@@ -124,7 +121,7 @@ export class PopoverDirective implements OnChanges {
         this.hide();
     }
 
-    public ngOnChanges(changes: {[propertyName: string]: SimpleChange}): void {
+    public ngOnChanges(changes: { [propertyName: string]: SimpleChange }): void {
         if (changes['popoverDisabled']) {
             if (changes['popoverDisabled'].currentValue) {
                 this.hide();

@@ -1,22 +1,19 @@
-import { CommonModule } from '@angular/common';
 import { PopoverDirective } from './popover.directive';
 import { PopoverContentComponent } from './popover-content.component';
 import { NgModule } from '@angular/core';
-
-export * from './popover.directive';
-export * from './popover-content.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
     declarations: [
-        PopoverContentComponent,
         PopoverDirective,
+        PopoverContentComponent
+    ],
+    imports: [
+        CommonModule,
     ],
     exports: [
         PopoverContentComponent,
-        PopoverDirective,
+        PopoverDirective
     ],
     entryComponents: [
         PopoverContentComponent
