@@ -42,8 +42,7 @@ import { PopoverDirective, PopoverPlacement } from './popover.directive';
                 {{ content }}
             </div>
     </div>
-    `,
-    styleUrls: ['./popover-content.component.scss']
+    `
 })
 export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   // -------------------------------------------------------------------------
