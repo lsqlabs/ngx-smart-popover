@@ -1,6 +1,6 @@
 {
     "name": "ngx-smart-popover",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lsqlabs/ngx-smart-popover.git"
@@ -30,8 +30,8 @@
     },
     "homepage": "https://github.com/lsqlabs/ngx-smart-popover#readme",
     "peerDependencies": {
-        "@angular/common": "^6.0.0",
-        "@angular/core": "^6.0.0",
+        "@angular/common": ">=6.0.0",
+        "@angular/core": ">=6.0.0",
         "bootstrap": "^4.0.0"
     }
 }
