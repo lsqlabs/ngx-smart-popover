@@ -23,7 +23,8 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.css",
+                            "projects/ngx-smart-popover/src/lib/popover-content.component.scss"
                         ],
                         "scripts": []
                     },
