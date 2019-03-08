@@ -125,13 +125,15 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-      if (this.closeOnClickOutside) {
+      if (this.closeOnClickOutside && this.listenClickFunc) {
           this.listenClickFunc();
       }
-      if (this.closeOnMouseOutside) {
+      if (this.closeOnMouseOutside && this.listenMouseFunc) {
           this.listenMouseFunc();
       }
-      this.listenTouchFunc();
+      if (!!this.listenTouchFunc) {
+          this.listenTouchFunc();
+      }
   }
 
   // -------------------------------------------------------------------------
