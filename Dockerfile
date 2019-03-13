@@ -20,6 +20,7 @@ RUN apt-get update -y && \
 
 # Replace the run-protractor script that is called by the `caltha/protractor` image with one that changes the baseUrl.
 COPY run-protractor-docker /usr/local/bin/run-protractor
+COPY supervisor-protractor.conf /etc/supervisor/conf.d/protractor.conf
 
 # Add project files.
 RUN mkdir /usr/src/app
