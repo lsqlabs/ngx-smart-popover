@@ -2,6 +2,15 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+
+const screenshotReporter = new HtmlScreenshotReporter({
+    dest: `${__dirname}/e2e/screenshots/reports`,
+    filename: 'summary.html',
+    captureOnlyFailedSpecs: true,
+    inlineImages: true,
+    reportFailedUrl: true
+});
 
 exports.config = {
     allScriptsTimeout: 11000,
@@ -9,7 +18,11 @@ exports.config = {
         './src/**/*.e2e-spec.ts'
     ],
     capabilities: {
-        'browserName': 'chrome'
+        browserName: 'chrome',
+        chromeOptions: {
+            useAutomationExtension: false,
+            args: ['--disable-web-security', '--no-sandbox', '--headless', '--hide-scrollbars', '--disable-gpu']
+        }
     },
     directConnect: true,
     baseUrl: 'http://localhost:4200/',
@@ -24,5 +37,7 @@ exports.config = {
             project: require('path').join(__dirname, './tsconfig.e2e.json')
         });
         jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+        // Add screenshot reporter for failed tests.
+        jasmine.getEnv().addReporter(screenshotReporter);
     }
 };

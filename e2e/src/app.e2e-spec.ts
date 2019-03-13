@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
     it('should display welcome message', () => {
         page.navigateTo();
-        expect(page.getTitleText()).toEqual('Welcome to ngx-smart-popover-demo!');
+        expect(page.getTitleText()).toEqual('ngx-smart-popover Demo');
     });
 
     afterEach(async () => {

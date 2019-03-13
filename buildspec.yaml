@@ -1,0 +1,8 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - printenv
+      - docker build -t $PROJECT_NAME-e2e-tests -f Dockerfile
+      - docker run --rm $PROJECT_NAME-e2e-tests
