@@ -4,5 +4,5 @@ phases:
   build:
     commands:
       - printenv
-      - docker build -t $PROJECT_NAME-e2e-tests .
-      - docker run --rm $PROJECT_NAME-e2e-tests
+      - docker build -t ngx-smart-popover-e2e-tests .
+      - docker run --rm ngx-smart-popover-e2e-tests
