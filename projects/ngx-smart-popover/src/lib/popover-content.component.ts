@@ -14,7 +14,8 @@ import {
   Renderer2,
   ViewChild
 } from '@angular/core';
-import { PopoverDirective, PopoverPlacement } from './popover.directive';
+import { PopoverDirective } from './popover.directive';
+import { PopoverPlacement } from './popover.placement';
 
 @Component({
   selector: 'popover-content',
