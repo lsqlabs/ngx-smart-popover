@@ -1,7 +1,7 @@
 # ngx-smart-popover
 Simple popover control for your angular (v4+) applications using bootstrap4 with smart reflection logic when overflowing the viewport. This is a continuation of ngx-popover (https://github.com/pleerock/ngx-popover). If you want to use it without bootstrap - simply create corresponding css classes.
 
-See a quick [DEMO](https://lsqlabs.github.io/ngx-smart-popover/dist/demo/)
+See a quick demo - [https://lsqlabs.github.io/ngx-smart-popover/](https://lsqlabs.github.io/ngx-smart-popover/)
 
 ## Installation
 
