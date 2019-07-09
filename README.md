@@ -66,6 +66,8 @@ Example of usage with dynamic html content:
     * `[popoverCloseOnMouseOutside]="true|false"` Indicates if popover should be closed when user mouse outside of it. Default is **false**.
     * `[popoverCloseOnClickOutside]="true|false"` Indicates if popover should be closed when user click outside of it. Default is **false**.
     * `[popoverDismissTimeout]="number"` Used to automatically dismiss popover after given amount of time. Default is **0**, means disabled.
+    * `(onShown)="onPopoverShown()"` Emits when popover is shown.
+    * `(onHidden)="onPopoverHidden()"` Emits when popover is hidden.
 * `<popover-content>`:
     * `placement="top|bottom|left|right|auto|auto top|auto bottom|auto left|auto right"` Indicates where the popover should be placed. When using **"auto"** modifier, will show in opposite direction if not enough room. Default is **"bottom"**.
     * `[animation]="true|false"` Indicates if all popover should be shown with animation or not. Default is **true**.
