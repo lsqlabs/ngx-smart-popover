@@ -45,15 +45,6 @@
         regular glasses.
     </popover-content>
     <img height="75" [popover]="sunglassesRef" popoverPlacement="bottom-left" src="assets/sunglasses.png">
-    <popover-content #sweatRef>
-        <h2>😅 Grinning Face With Sweat</h2>
-        A face with a grin and smiling eyes similar to 😄 <a
-            href="https://emojipedia.org/smiling-face-with-open-mouth-and-smiling-eyes/" target="_blank">Grinning Face
-            With Smiling Eyes</a> but with a single bead of forehead sweat over its left eye (right on WhatsApp).
-        Intended to depict nerves or discomfort but commonly used as a means of expressing "whew!" or "close call!" that
-        would be implied when a person wipes sweat from their brow in an exaggerated manner.
-    </popover-content>
-    <img height="75" [popover]="sweatRef" popoverPlacement="left" src="assets/sweat.png">
     <popover-content #thinkingRef>
         <h2>🤔 Thinking Face</h2>
         A face shown with a single finger and thumb resting on the chin, glancing upward. Used to indicate thinking, or
@@ -71,6 +62,21 @@
         joking.
     </popover-content>
     <img height="75" [popover]="tongueRef" [popoverOnHover]="false" src="assets/tongue.png">
+</div>
+
+<br /><br />
+<h3 class="text-center">Close popover by the outside click</h3>
+<div class="center-content">
+    <popover-content #sweatRef
+                     [closeOnClickOutside]="true">
+        <h2>😅 Grinning Face With Sweat</h2>
+        A face with a grin and smiling eyes similar to 😄 <a
+            href="https://emojipedia.org/smiling-face-with-open-mouth-and-smiling-eyes/" target="_blank">Grinning Face
+        With Smiling Eyes</a> but with a single bead of forehead sweat over its left eye (right on WhatsApp).
+        Intended to depict nerves or discomfort but commonly used as a means of expressing "whew!" or "close call!" that
+        would be implied when a person wipes sweat from their brow in an exaggerated manner.
+    </popover-content>
+    <img height="75" [popover]="sweatRef" [popoverOnHover]="false" src="assets/sweat.png">
 </div>
 
 <br /><br />

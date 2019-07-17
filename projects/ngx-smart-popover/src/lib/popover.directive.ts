@@ -4,6 +4,7 @@
  */
 
 import {
+    ChangeDetectorRef,
     ComponentFactoryResolver,
     ComponentRef,
     Directive,
@@ -39,6 +40,7 @@ export class PopoverDirective implements OnChanges {
     // Constructor
     // -------------------------------------------------------------------------
     constructor(protected viewContainerRef: ViewContainerRef,
+        protected cdr: ChangeDetectorRef,
         protected resolver: ComponentFactoryResolver) {
     }
 
@@ -201,6 +203,7 @@ export class PopoverDirective implements OnChanges {
             popover.show();
         }
 
+        this.cdr.detectChanges();
         this.onShown.emit(this);
     }
 
@@ -218,6 +221,7 @@ export class PopoverDirective implements OnChanges {
             (this.content as PopoverContentComponent).hideFromPopover();
         }
 
+        this.cdr.detectChanges();
         this.onHidden.emit(this);
     }
 
