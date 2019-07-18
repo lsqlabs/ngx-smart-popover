@@ -4,18 +4,20 @@
  */
 
 import {
-    ChangeDetectorRef,
+    ApplicationRef,
+    ChangeDetectorRef, Component,
     ComponentFactoryResolver,
     ComponentRef,
-    Directive,
+    Directive, EmbeddedViewRef,
     EventEmitter,
-    HostListener,
+    HostListener, Injector,
     Input,
     OnChanges,
     Output,
-    SimpleChange,
-    ViewContainerRef
+    SimpleChange, Type,
+    ViewContainerRef,
 } from '@angular/core';
+
 import { PopoverContentComponent } from './popover-content.component';
 import { PopoverPlacement } from './popover.placement';
 
@@ -41,7 +43,9 @@ export class PopoverDirective implements OnChanges {
     // -------------------------------------------------------------------------
     constructor(protected viewContainerRef: ViewContainerRef,
         protected cdr: ChangeDetectorRef,
-        protected resolver: ComponentFactoryResolver) {
+        protected resolver: ComponentFactoryResolver,
+        protected appRef: ApplicationRef,
+        private injector: Injector) {
     }
 
     // -------------------------------------------------------------------------
@@ -57,6 +61,7 @@ export class PopoverDirective implements OnChanges {
     @Input() public popoverCloseOnClickOutside: boolean;
     @Input() public popoverCloseOnMouseOutside: boolean;
     @Input() public popoverDismissTimeout = 0;
+    @Input() public appendToBody: boolean;
     @Output() public onShown = new EventEmitter<PopoverDirective>();
     @Output() public onHidden = new EventEmitter<PopoverDirective>();
 
@@ -122,6 +127,38 @@ export class PopoverDirective implements OnChanges {
         }
     }
 
+    protected createComponent(component: Type<any>): ComponentRef<any> {
+        const factory = this.resolver.resolveComponentFactory(component);
+
+        // Create a component reference from the component
+        const componentRef = this.appendToBody
+            ? factory.create(this.injector)
+            : this.viewContainerRef.createComponent(factory);
+
+        if (this.appendToBody) {
+            // Attach component to the appRef so that it's inside the ng component tree
+            this.appRef.attachView(componentRef.hostView);
+
+            // Get DOM element from component
+            const domElem = (componentRef.hostView as EmbeddedViewRef<any>)
+                .rootNodes[0] as HTMLElement;
+
+            // Append DOM element to the body
+            document.body.appendChild(domElem);
+        }
+
+        return componentRef;
+    }
+
+    protected removeComponent(componentRef: ComponentRef<any>) {
+        if (this.popover) {
+            if (this.appendToBody) {
+                this.appRef.detachView(componentRef.hostView);
+            }
+            componentRef.destroy();
+        }
+    }
+
     // -------------------------------------------------------------------------
     // Public Methods
     // -------------------------------------------------------------------------
@@ -140,12 +177,11 @@ export class PopoverDirective implements OnChanges {
 
         this.visible = true;
         if (typeof this.content === 'string') {
-            const factory = this.resolver.resolveComponentFactory(this.popoverContentComponent);
             if (!this.visible) {
                 return;
             }
 
-            this.popover = this.viewContainerRef.createComponent(factory);
+            this.popover = this.createComponent(this.popoverContentComponent);
             const popover = this.popover.instance as PopoverContentComponent;
             popover.popover = this;
             popover.content = this.content as string;
@@ -167,6 +203,8 @@ export class PopoverDirective implements OnChanges {
             if (this.popoverSize) {
                 popover.size = this.popoverSize;
             }
+
+            popover.appendToBody = this.appendToBody;
 
             popover.onCloseFromOutside.subscribe(() => this.hide());
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time
@@ -195,6 +233,8 @@ export class PopoverDirective implements OnChanges {
                 popover.size = this.popoverSize;
             }
 
+            popover.appendToBody = this.appendToBody;
+
             popover.onCloseFromOutside.subscribe(() => this.hide());
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time
             if (this.popoverDismissTimeout > 0) {
@@ -213,9 +253,7 @@ export class PopoverDirective implements OnChanges {
         }
 
         this.visible = false;
-        if (this.popover) {
-            this.popover.destroy();
-        }
+        this.removeComponent(this.popover);
 
         if (this.content instanceof PopoverContentComponent) {
             (this.content as PopoverContentComponent).hideFromPopover();

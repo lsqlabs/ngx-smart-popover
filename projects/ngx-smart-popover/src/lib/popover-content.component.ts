@@ -4,15 +4,15 @@
  */
 
 import {
-  AfterViewInit,
-  ChangeDetectorRef,
-  Component,
-  ElementRef,
-  EventEmitter,
-  Input,
-  OnDestroy,
-  Renderer2,
-  ViewChild
+    AfterViewInit, ApplicationRef,
+    ChangeDetectorRef,
+    Component, ComponentRef,
+    ElementRef, EmbeddedViewRef,
+    EventEmitter, Injector,
+    Input,
+    OnDestroy,
+    Renderer2,
+    ViewChild, ViewContainerRef,
 } from '@angular/core';
 import { PopoverDirective } from './popover.directive';
 import { PopoverPlacement } from './popover.placement';
@@ -56,6 +56,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   @Input() public animation = true;
   @Input() public closeOnClickOutside = false;
   @Input() public closeOnMouseOutside = false;
+  @Input() public appendToBody: boolean;
   @Input() public size: 'small' | 'medium-small' | 'medium' | 'large' | 'auto' = 'small';
 
   // -------------------------------------------------------------------------
@@ -144,7 +145,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   public updatePosition(): void {
       // if visible, reposition
       if (this.opacity) {
-          const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement);
+          const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement, this.appendToBody);
           this.top = p.top;
           this.left = p.left;
       }
@@ -155,7 +156,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
           return;
       }
 
-      const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement);
+      const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement, this.appendToBody);
       this.displayType = 'block';
       this.top = p.top;
       this.left = p.left;
