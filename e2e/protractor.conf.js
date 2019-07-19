@@ -3,6 +3,7 @@
 
 const { SpecReporter } = require('jasmine-spec-reporter');
 const HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+const { ProtractorScreenshotExtension } = require('protractor-screenshot-extension');
 
 const screenshotReporter = new HtmlScreenshotReporter({
     dest: `${__dirname}/screenshots/reports`,
@@ -39,5 +40,7 @@ exports.config = {
         jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
         // Add screenshot reporter for failed tests.
         jasmine.getEnv().addReporter(screenshotReporter);
+
+        browser.screenshotExtension = new ProtractorScreenshotExtension(`${__dirname}/screenshots`);
     }
 };

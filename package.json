@@ -11,6 +11,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
+        "e2e:entrypoint": "npm install && ng e2e",
+        "e2e:docker": "docker build -t ngx-smart-popover-e2e-tests . && docker run -v ~/code/ngx-smart-popover:/usr/src/app --rm ngx-smart-popover-e2e-tests",
         "run": "ng-packagr -p package.json",
         "publish": "cp README.md dist/ngx-smart-popover/README.md && cd dist/ngx-smart-popover && npm publish"
     },
@@ -50,6 +52,7 @@
         "ng-packagr": "^5.1.0",
         "protractor": "~5.4.0",
         "protractor-jasmine2-screenshot-reporter": "0.5.0",
+        "protractor-screenshot-extension": "^1.0.6",
         "scss-bundle": "^2.5.1",
         "ts-node": "~7.0.0",
         "tsickle": ">=0.34.0",
