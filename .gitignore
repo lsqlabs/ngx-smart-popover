@@ -40,3 +40,5 @@ Thumbs.db
 
 # Certificates
 *.crt
+
+/e2e/screenshots/reports/*

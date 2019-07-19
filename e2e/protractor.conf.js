@@ -5,7 +5,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 const HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 
 const screenshotReporter = new HtmlScreenshotReporter({
-    dest: `${__dirname}/e2e/screenshots/reports`,
+    dest: `${__dirname}/screenshots/reports`,
     filename: 'summary.html',
     captureOnlyFailedSpecs: true,
     inlineImages: true,
