@@ -7,89 +7,94 @@
 
 
 <h3 class="text-center">Hover the emojis!</h3>
-<div class="center-content">
+<div class="all-placements center-content">
     <popover-content #tearsRef>
-        <h2>😂 Face With Tears of Joy</h2>
+        <h2>Face With Tears of Joy</h2>
         A yellow face with a big grin, uplifted eyebrows, and smiling eyes, each shedding a tear from laughing so hard.
         Widely used to show something is funny or pleasing.
     </popover-content>
-    <img height="75" [popover]="tearsRef" src="assets/tears.png">
+    <img class="emoji-top" height="75" [popover]="tearsRef" src="assets/tears.png">
     <popover-content #eyebrowRef>
-        <h2>🤨 Face With Raised Eyebrow</h2>
+        <h2>Face With Raised Eyebrow</h2>
         A face with a neutral mouth and single eyebrow raised. May be used to denote scepticism, disbelief, or
         disapproval.
     </popover-content>
-    <img height="75" [popover]="eyebrowRef" popoverPlacement="top-right" src="assets/eyebrow.png">
+    <img class="emoji-top-right" height="75" [popover]="eyebrowRef" popoverPlacement="top-right" src="assets/eyebrow.png">
     <popover-content #droolRef>
-        <h2>🤤 Drooling Face</h2>
+        <h2>Drooling Face</h2>
         A face shown with drool dripping from one side of the mouth. May be used as a display of desire in a person,
         object or concept. Previously displayed with a startled appearance on Samsung devices.
     </popover-content>
-    <img height="75" [popover]="droolRef" popoverPlacement="right" src="assets/drool.png">
+    <img class="emoji-right" height="75" [popover]="droolRef" popoverPlacement="right" src="assets/drool.png">
     <popover-content #kissRef>
-        <h2>😘 Face Blowing a Kiss</h2>
+        <h2>Face Blowing a Kiss</h2>
         An emoji face blowing a kiss, usually shown with one eye open and the other eye winking. A heart is shown
         leaving the kissing mouth.
     </popover-content>
-    <img height="75" [popover]="kissRef" popoverPlacement="bottom-right" src="assets/kiss.png">
+    <img class="emoji-bottom-right" height="75" [popover]="kissRef" popoverPlacement="bottom-right" src="assets/kiss.png">
     <popover-content #persevereRef>
-        <h2>😣 Persevering Face</h2>
+        <h2>Persevering Face</h2>
         Face with scrunched up and closed eyes, frowning. Used to show helplessness in a situation. May be on the verge
         of tears.
     </popover-content>
-    <img height="75" [popover]="persevereRef" popoverPlacement="bottom" src="assets/persevere.png">
+    <img class="emoji-bottom" height="75" [popover]="persevereRef" popoverPlacement="bottom" src="assets/persevere.png">
     <popover-content #sunglassesRef>
-        <h2>😎 Smiling Face With Sunglasses</h2>
+        <h2>Smiling Face With Sunglasses</h2>
         A face smiling and wearing dark sunglasses that is used to denote a sense of cool. The <a
             href="https://emojipedia.org/nerd-face/" target="_blank">nerd face emoji</a> is a similar face, but with
         regular glasses.
     </popover-content>
-    <img height="75" [popover]="sunglassesRef" popoverPlacement="bottom-left" src="assets/sunglasses.png">
+    <img class="emoji-bottom-left" height="75" [popover]="sunglassesRef" popoverPlacement="bottom-left" src="assets/sunglasses.png">
+    <popover-content #zanyRef>
+        <h2>Zany Face</h2>
+        A smiley making a silly face. A yellow face with a big grin and wide, white eyes, one larger than the other and 
+        in a wild, cockeyed expression. Many platforms, including Apple, depict its tongue stuck out and head tilted; 
+        others feature a full-toothed grin, giving it a more unhinged appearance.
+    </popover-content>
+    <img class="emoji-left" height="75" [popover]="zanyRef" popoverPlacement="left" src="assets/zany.png">
     <popover-content #thinkingRef>
-        <h2>🤔 Thinking Face</h2>
+        <h2>Thinking Face</h2>
         A face shown with a single finger and thumb resting on the chin, glancing upward. Used to indicate thinking, or
         deep thought.
     </popover-content>
-    <img height="75" [popover]="thinkingRef" popoverPlacement="top-left" src="assets/thinking.png">
+    <img class="emoji-top-left" height="75" [popover]="thinkingRef" popoverPlacement="top-left" src="assets/thinking.png">
 </div>
 
 <br /><br />
 <h3 class="text-center">Click the emoji!</h3>
-<div class="center-content">
+<div class="click-to-show center-content">
     <popover-content #tongueRef>
-        <h2>😜 Winking Face With Tongue</h2>
+        <h2>Winking Face With Tongue</h2>
         A face showing a stuck-out tongue, winking at the same time. Used in an attempt to be wacky, zany, or otherwise
         joking.
     </popover-content>
-    <img height="75" [popover]="tongueRef" [popoverOnHover]="false" src="assets/tongue.png">
+    <img class="emoji" height="75" [popover]="tongueRef" [popoverOnHover]="false" src="assets/tongue.png">
 </div>
 
 <br /><br />
 <h3 class="text-center">Close popover by the outside click</h3>
-<div class="center-content">
+<div class="close-on-click-outside center-content">
     <popover-content #sweatRef
                      [closeOnClickOutside]="true">
-        <h2>😅 Grinning Face With Sweat</h2>
-        A face with a grin and smiling eyes similar to 😄 <a
-            href="https://emojipedia.org/smiling-face-with-open-mouth-and-smiling-eyes/" target="_blank">Grinning Face
-        With Smiling Eyes</a> but with a single bead of forehead sweat over its left eye (right on WhatsApp).
+        <h2>Grinning Face With Sweat</h2>
+        A face with a grin and smiling eyes similar to 'Grinning Face' but with a single bead of forehead sweat over its left eye (right on WhatsApp).
         Intended to depict nerves or discomfort but commonly used as a means of expressing "whew!" or "close call!" that
         would be implied when a person wipes sweat from their brow in an exaggerated manner.
     </popover-content>
-    <img height="75" [popover]="sweatRef" [popoverOnHover]="false" src="assets/sweat.png">
+    <img class="emoji" height="75" [popover]="sweatRef" [popoverOnHover]="false" src="assets/sweat.png">
 </div>
 
 <br /><br />
 <h3 class="text-center">This popover is set to open on the bottom.</h3>
 <p class="text-center">if you scroll the emoji to the bottom of the viewport, it will auto reflect to the top.</p>
 <p class="text-center">scroll the page down to see it open on the bottom.</p>
-<div class="center-content">
+<div class="placement-reflection center-content">
     <popover-content #cryRef>
-        <h2>😭 Loudly Crying Face</h2>
+        <h2>Loudly Crying Face</h2>
         A sad face with tears streaming down both cheeks. This face is distraught and inconsolable. Not to be confused
         with the <a href="https://emojipedia.org/face-with-tears-of-joy/" target="_blank">tears of joy emoji</a>.
     </popover-content>
-    <img height="75" [popover]="cryRef" popoverPlacement="bottom" src="assets/cry.png">
+    <img class="emoji" height="75" [popover]="cryRef" popoverPlacement="bottom" src="assets/cry.png">
 </div>
 
 <div style="height: 500px;"></div>

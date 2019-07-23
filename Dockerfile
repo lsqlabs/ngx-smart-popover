@@ -17,7 +17,6 @@ ENV PROJECT_NAME=${project}
 
 RUN apt-get update --fix-missing && \
     apt-get install -qy \
-        netcat-traditional \
         openjdk-8-jre \
         chromium \
     && \
@@ -27,6 +26,5 @@ RUN apt-get update --fix-missing && \
 RUN mkdir /usr/src/app
 COPY ./ /usr/src/app/
 WORKDIR /usr/src/app
-RUN npm install
 
-ENTRYPOINT npm run e2e
+ENTRYPOINT npm run e2e:entrypoint
