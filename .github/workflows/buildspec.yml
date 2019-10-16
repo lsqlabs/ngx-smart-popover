@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  pull_request:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v1
+
+    # - name: Build the Docker image
+    #   run: |
+    #         sudo apt-get update --fix-missing &&
+    #         sudo apt-get install -qy \
+    #             openjdk-8-jre \
+    #             chromium-browser &&
+    #         apt-get clean
+
+    - name: install webdriver-manager
+      run: sudo npm install webdriver-manager -g && webdriver-manager update --ignore_ssl
+
+    - name: Run e2e tests
+      run: npm run e2e:entrypoint
