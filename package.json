@@ -5,6 +5,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
+        "build:all": "ng build && npm run build:lib",
         "build:lib": "ng build ngx-smart-popover && npm run build:lib:scss && npm run build:lib:css",
         "build:lib:css": "node-sass ./projects/ngx-smart-popover/src/lib/popover-content.component.scss -o ./dist/ngx-smart-popover/css/",
         "build:lib:scss": "mkdir ./dist/ngx-smart-popover/scss/ && cp ./projects/ngx-smart-popover/src/lib/popover-content.component.scss ./dist/ngx-smart-popover/scss/popover-content.component.scss",
