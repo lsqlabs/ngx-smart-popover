@@ -26,14 +26,15 @@ import { PopoverPlacement } from './popover.placement';
             'sm': size === 'small',
             'md-sm': size === 'medium-small',
             'md': size === 'medium',
-            'lg': size === 'large'
+            'lg': size === 'large',
+            'in': isIn
         }"
         [style.top.px]="top"
         [style.left.px]="left"
         [style.transition]="(transitionEnabled ? '0.15s opacity' : '')"
         [style.opacity]="opacity"
         [style.display]="'block'"
-        [class.in]="isIn"
+        [attr.aria-hidden]="opacity === 0"
         role="popover">
             <div [hidden]="!closeOnMouseOutside" class="virtual-area"></div>
             <div class="arrow"></div>
@@ -68,7 +69,6 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   public top = -10000;
   public left = -10000;
   public isIn = false;
-  public displayType = 'none';
   public effectivePlacement: string;
   public opacity = 0;
   public transitionEnabled = false;
@@ -156,7 +156,6 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
       }
 
       const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement);
-      this.displayType = 'block';
       this.top = p.top;
       this.left = p.left;
       this.isIn = true;

@@ -38,7 +38,6 @@ var PopoverContentComponent = /** @class */ (function () {
         this.top = -10000;
         this.left = -10000;
         this.isIn = false;
-        this.displayType = 'none';
         this.opacity = 0;
         this.transitionEnabled = false;
         this.windowWidth = window.innerWidth;
@@ -103,7 +102,6 @@ var PopoverContentComponent = /** @class */ (function () {
             return;
         }
         var p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement);
-        this.displayType = 'block';
         this.top = p.top;
         this.left = p.left;
         this.isIn = true;
@@ -416,7 +414,7 @@ var PopoverContentComponent = /** @class */ (function () {
     PopoverContentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'popover-content',
-            template: "\n    <div #popoverDiv\n        class=\"bs-popover-{{ effectivePlacement }} popover-content popover {{ parentClass }}\"\n        [ngClass]=\"{\n            'sm': size === 'small',\n            'md-sm': size === 'medium-small',\n            'md': size === 'medium',\n            'lg': size === 'large'\n        }\"\n        [style.top.px]=\"top\"\n        [style.left.px]=\"left\"\n        [style.transition]=\"(transitionEnabled ? '0.15s opacity' : '')\"\n        [style.opacity]=\"opacity\"\n        [style.display]=\"'block'\"\n        [class.in]=\"isIn\"\n        role=\"popover\">\n            <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n            <div class=\"arrow\"></div>\n            <div class=\"popover-header\" [hidden]=\"!title\">{{ title }}</div>\n            <div class=\"popover-body\">\n                <ng-content></ng-content>\n                {{ content }}\n            </div>\n    </div>\n    "
+            template: "\n    <div #popoverDiv\n        class=\"bs-popover-{{ effectivePlacement }} popover-content popover {{ parentClass }}\"\n        [ngClass]=\"{\n            'sm': size === 'small',\n            'md-sm': size === 'medium-small',\n            'md': size === 'medium',\n            'lg': size === 'large',\n            'in': isIn\n        }\"\n        [style.top.px]=\"top\"\n        [style.left.px]=\"left\"\n        [style.transition]=\"(transitionEnabled ? '0.15s opacity' : '')\"\n        [style.opacity]=\"opacity\"\n        [style.display]=\"'block'\"\n        [attr.aria-hidden]=\"opacity === 0\"\n        role=\"popover\">\n            <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n            <div class=\"arrow\"></div>\n            <div class=\"popover-header\" [hidden]=\"!title\">{{ title }}</div>\n            <div class=\"popover-body\">\n                <ng-content></ng-content>\n                {{ content }}\n            </div>\n    </div>\n    "
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"],
@@ -969,7 +967,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rmusk/code/ngx-smart-popover/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/dmayer/code/ngx-smart-popover/src/main.ts */"./src/main.ts");
 
 
 /***/ })
