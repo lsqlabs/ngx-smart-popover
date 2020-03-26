@@ -62,7 +62,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
   // -------------------------------------------------------------------------
   // Properties
   // -------------------------------------------------------------------------
-  @ViewChild('popoverDiv') public popoverDiv: ElementRef;
+  @ViewChild('popoverDiv', { static: true }) public popoverDiv: ElementRef;
 
   public popover: PopoverDirective;
   public onCloseFromOutside = new EventEmitter();

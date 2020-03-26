@@ -1,3 +1,5 @@
+import { PopoverDirective } from './../../projects/ngx-smart-popover/src/lib/popover.directive';
+import { PopoverContentComponent } from './../../projects/ngx-smart-popover/src/lib/popover-content.component';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
@@ -5,7 +7,9 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                AppComponent
+                AppComponent,
+                PopoverContentComponent,
+                PopoverDirective
             ],
         }).compileComponents();
     }));
@@ -26,6 +30,6 @@ describe('AppComponent', () => {
         const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngx-smart-popover-demo!');
+        expect(compiled.querySelector('h1').textContent).toContain('ngx-smart-popover Demo');
     });
 });
