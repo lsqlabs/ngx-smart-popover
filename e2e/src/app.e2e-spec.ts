@@ -191,9 +191,9 @@ describe('ngx-smart-popover App', () => {
         it('should append popover to body', async () => {
             const emoji = element(by.css('.body-popover .emoji'));
             await browser.executeScript('arguments[0].scrollIntoView(true)', emoji.getWebElement());
-            // Give enough time to finish rendering.
-            await browser.sleep(300);
             await browser.actions().mouseMove(emoji, { x: 37, y: 37 }).click().perform();
+            // Give enough time to finish rendering.
+            await browser.sleep(200);
             const elements = element.all(by.css('body>popover-content .popover-content .popover-body'));
             await expect((await elements).length).toBe(1);
             await expect ((await elements.get(0).getText())).toBe('Message from body');
