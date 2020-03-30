@@ -187,6 +187,25 @@ describe('ngx-smart-popover App', () => {
         });
     });
 
+    describe('the append to body functionality', () => {
+        it('should append popover to body', async () => {
+            const emoji = element(by.css('.body-popover .emoji'));
+            await browser.executeScript('arguments[0].scrollIntoView(true)', emoji.getWebElement());
+            // Give enough time to finish rendering.
+            await browser.sleep(200);
+            await browser.actions().mouseMove(emoji, { x: 37, y: 37 }).click().perform();
+            const elements = element.all(by.css('body>popover-content .popover-content .popover-body'));
+            await expect((await elements).length).toBe(1);
+            await expect ((await elements.get(0).getText())).toBe('Message from body');
+            await expect(screenshotExtension.checkPageScreenshot(
+                'popover-appended-to-body'
+            )).toBe(0);
+
+            // Close out the popover to put us in a clean state
+            await browser.actions().mouseMove(emoji, { x: -100, y: 37 }).click().perform();
+        });
+    });
+
     afterEach(async () => {
         // Assert that there are no errors emitted from the browser
         const logs = await browser.manage().logs().get(logging.Type.BROWSER);
