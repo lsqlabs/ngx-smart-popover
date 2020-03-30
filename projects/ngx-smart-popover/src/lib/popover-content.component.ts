@@ -58,6 +58,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
     @Input() public animation = true;
     @Input() public closeOnClickOutside = false;
     @Input() public closeOnMouseOutside = false;
+    @Input() public appendToBody = false;
     @Input() public size: 'small' | 'medium-small' | 'medium' | 'large' | 'auto' = 'small';
 
     // -------------------------------------------------------------------------
@@ -193,7 +194,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         const positionStrParts = (positionStr as string).split(' ');
         let pos0 = positionStrParts[0];
         const pos1 = positionStrParts[1] || 'center';
-        const hostElPos = appendToBody ? this.offset(hostEl) : this.position(hostEl);
+        const hostElPos = this.appendToBody || appendToBody ? this.offset(hostEl) : this.position(hostEl);
         const targetElWidth = targetEl.offsetWidth;
         const targetElHeight = targetEl.offsetHeight;
 
