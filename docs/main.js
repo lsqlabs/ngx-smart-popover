@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"jumbotron text-center\">\n    <h1>\n        <img height=\"70\" src=\"assets/popover.png\">ngx-smart-popover Demo\n    </h1>\n</div>\n\n\n\n<h3 class=\"text-center\">Hover the emojis!</h3>\n<div class=\"all-placements center-content\">\n    <popover-content #tearsRef>\n        <h2>Face With Tears of Joy</h2>\n        A yellow face with a big grin, uplifted eyebrows, and smiling eyes, each shedding a tear from laughing so hard.\n        Widely used to show something is funny or pleasing.\n    </popover-content>\n    <img class=\"emoji-top\" height=\"75\" [popover]=\"tearsRef\" src=\"assets/tears.png\">\n    <popover-content #eyebrowRef>\n        <h2>Face With Raised Eyebrow</h2>\n        A face with a neutral mouth and single eyebrow raised. May be used to denote scepticism, disbelief, or\n        disapproval.\n    </popover-content>\n    <img class=\"emoji-top-right\" height=\"75\" [popover]=\"eyebrowRef\" popoverPlacement=\"top-right\" src=\"assets/eyebrow.png\">\n    <popover-content #droolRef>\n        <h2>Drooling Face</h2>\n        A face shown with drool dripping from one side of the mouth. May be used as a display of desire in a person,\n        object or concept. Previously displayed with a startled appearance on Samsung devices.\n    </popover-content>\n    <img class=\"emoji-right\" height=\"75\" [popover]=\"droolRef\" popoverPlacement=\"right\" src=\"assets/drool.png\">\n    <popover-content #kissRef>\n        <h2>Face Blowing a Kiss</h2>\n        An emoji face blowing a kiss, usually shown with one eye open and the other eye winking. A heart is shown\n        leaving the kissing mouth.\n    </popover-content>\n    <img class=\"emoji-bottom-right\" height=\"75\" [popover]=\"kissRef\" popoverPlacement=\"bottom-right\" src=\"assets/kiss.png\">\n    <popover-content #persevereRef>\n        <h2>Persevering Face</h2>\n        Face with scrunched up and closed eyes, frowning. Used to show helplessness in a situation. May be on the verge\n        of tears.\n    </popover-content>\n    <img class=\"emoji-bottom\" height=\"75\" [popover]=\"persevereRef\" popoverPlacement=\"bottom\" src=\"assets/persevere.png\">\n    <popover-content #sunglassesRef>\n        <h2>Smiling Face With Sunglasses</h2>\n        A face smiling and wearing dark sunglasses that is used to denote a sense of cool. The <a\n            href=\"https://emojipedia.org/nerd-face/\" target=\"_blank\">nerd face emoji</a> is a similar face, but with\n        regular glasses.\n    </popover-content>\n    <img class=\"emoji-bottom-left\" height=\"75\" [popover]=\"sunglassesRef\" popoverPlacement=\"bottom-left\" src=\"assets/sunglasses.png\">\n    <popover-content #zanyRef>\n        <h2>Zany Face</h2>\n        A smiley making a silly face. A yellow face with a big grin and wide, white eyes, one larger than the other and \n        in a wild, cockeyed expression. Many platforms, including Apple, depict its tongue stuck out and head tilted; \n        others feature a full-toothed grin, giving it a more unhinged appearance.\n    </popover-content>\n    <img class=\"emoji-left\" height=\"75\" [popover]=\"zanyRef\" popoverPlacement=\"left\" src=\"assets/zany.png\">\n    <popover-content #thinkingRef>\n        <h2>Thinking Face</h2>\n        A face shown with a single finger and thumb resting on the chin, glancing upward. Used to indicate thinking, or\n        deep thought.\n    </popover-content>\n    <img class=\"emoji-top-left\" height=\"75\" [popover]=\"thinkingRef\" popoverPlacement=\"top-left\" src=\"assets/thinking.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">Click the emoji!</h3>\n<div class=\"click-to-show center-content\">\n    <popover-content #tongueRef>\n        <h2>Winking Face With Tongue</h2>\n        A face showing a stuck-out tongue, winking at the same time. Used in an attempt to be wacky, zany, or otherwise\n        joking.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"tongueRef\" [popoverOnHover]=\"false\" src=\"assets/tongue.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">Close popover by the outside click</h3>\n<div class=\"close-on-click-outside center-content\">\n    <popover-content #sweatRef\n                     [closeOnClickOutside]=\"true\">\n        <h2>Grinning Face With Sweat</h2>\n        A face with a grin and smiling eyes similar to 'Grinning Face' but with a single bead of forehead sweat over its left eye (right on WhatsApp).\n        Intended to depict nerves or discomfort but commonly used as a means of expressing \"whew!\" or \"close call!\" that\n        would be implied when a person wipes sweat from their brow in an exaggerated manner.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"sweatRef\" [popoverOnHover]=\"false\" src=\"assets/sweat.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">This popover is set to open on the bottom.</h3>\n<p class=\"text-center\">if you scroll the emoji to the bottom of the viewport, it will auto reflect to the top.</p>\n<p class=\"text-center\">scroll the page down to see it open on the bottom.</p>\n<div class=\"placement-reflection center-content\">\n    <popover-content #cryRef>\n        <h2>Loudly Crying Face</h2>\n        A sad face with tears streaming down both cheeks. This face is distraught and inconsolable. Not to be confused\n        with the <a href=\"https://emojipedia.org/face-with-tears-of-joy/\" target=\"_blank\">tears of joy emoji</a>.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"cryRef\" popoverPlacement=\"bottom\" src=\"assets/cry.png\">\n</div>\n\n<div style=\"height: 500px;\"></div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"jumbotron text-center\">\n    <h1>\n        <img height=\"70\" src=\"assets/popover.png\">ngx-smart-popover Demo\n    </h1>\n</div>\n\n\n\n<h3 class=\"text-center\">Hover the emojis!</h3>\n<div class=\"all-placements center-content\">\n    <popover-content #tearsRef>\n        <h2>Face With Tears of Joy</h2>\n        A yellow face with a big grin, uplifted eyebrows, and smiling eyes, each shedding a tear from laughing so hard.\n        Widely used to show something is funny or pleasing.\n    </popover-content>\n    <img class=\"emoji-top\" height=\"75\" [popover]=\"tearsRef\" src=\"assets/tears.png\">\n    <popover-content #eyebrowRef>\n        <h2>Face With Raised Eyebrow</h2>\n        A face with a neutral mouth and single eyebrow raised. May be used to denote scepticism, disbelief, or\n        disapproval.\n    </popover-content>\n    <img class=\"emoji-top-right\" height=\"75\" [popover]=\"eyebrowRef\" popoverPlacement=\"top-right\" src=\"assets/eyebrow.png\">\n    <popover-content #droolRef>\n        <h2>Drooling Face</h2>\n        A face shown with drool dripping from one side of the mouth. May be used as a display of desire in a person,\n        object or concept. Previously displayed with a startled appearance on Samsung devices.\n    </popover-content>\n    <img class=\"emoji-right\" height=\"75\" [popover]=\"droolRef\" popoverPlacement=\"right\" src=\"assets/drool.png\">\n    <popover-content #kissRef>\n        <h2>Face Blowing a Kiss</h2>\n        An emoji face blowing a kiss, usually shown with one eye open and the other eye winking. A heart is shown\n        leaving the kissing mouth.\n    </popover-content>\n    <img class=\"emoji-bottom-right\" height=\"75\" [popover]=\"kissRef\" popoverPlacement=\"bottom-right\" src=\"assets/kiss.png\">\n    <popover-content #persevereRef>\n        <h2>Persevering Face</h2>\n        Face with scrunched up and closed eyes, frowning. Used to show helplessness in a situation. May be on the verge\n        of tears.\n    </popover-content>\n    <img class=\"emoji-bottom\" height=\"75\" [popover]=\"persevereRef\" popoverPlacement=\"bottom\" src=\"assets/persevere.png\">\n    <popover-content #sunglassesRef>\n        <h2>Smiling Face With Sunglasses</h2>\n        A face smiling and wearing dark sunglasses that is used to denote a sense of cool. The <a\n            href=\"https://emojipedia.org/nerd-face/\" target=\"_blank\">nerd face emoji</a> is a similar face, but with\n        regular glasses.\n    </popover-content>\n    <img class=\"emoji-bottom-left\" height=\"75\" [popover]=\"sunglassesRef\" popoverPlacement=\"bottom-left\" src=\"assets/sunglasses.png\">\n    <popover-content #zanyRef>\n        <h2>Zany Face</h2>\n        A smiley making a silly face. A yellow face with a big grin and wide, white eyes, one larger than the other and \n        in a wild, cockeyed expression. Many platforms, including Apple, depict its tongue stuck out and head tilted; \n        others feature a full-toothed grin, giving it a more unhinged appearance.\n    </popover-content>\n    <img class=\"emoji-left\" height=\"75\" [popover]=\"zanyRef\" popoverPlacement=\"left\" src=\"assets/zany.png\">\n    <popover-content #thinkingRef>\n        <h2>Thinking Face</h2>\n        A face shown with a single finger and thumb resting on the chin, glancing upward. Used to indicate thinking, or\n        deep thought.\n    </popover-content>\n    <img class=\"emoji-top-left\" height=\"75\" [popover]=\"thinkingRef\" popoverPlacement=\"top-left\" src=\"assets/thinking.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">Click the emoji!</h3>\n<div class=\"click-to-show center-content\">\n    <popover-content #tongueRef>\n        <h2>Winking Face With Tongue</h2>\n        A face showing a stuck-out tongue, winking at the same time. Used in an attempt to be wacky, zany, or otherwise\n        joking.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"tongueRef\" [popoverOnHover]=\"false\" src=\"assets/tongue.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">Close popover by the outside click</h3>\n<div class=\"close-on-click-outside center-content\">\n    <popover-content #sweatRef\n                     [closeOnClickOutside]=\"true\">\n        <h2>Grinning Face With Sweat</h2>\n        A face with a grin and smiling eyes similar to 'Grinning Face' but with a single bead of forehead sweat over its left eye (right on WhatsApp).\n        Intended to depict nerves or discomfort but commonly used as a means of expressing \"whew!\" or \"close call!\" that\n        would be implied when a person wipes sweat from their brow in an exaggerated manner.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"sweatRef\" [popoverOnHover]=\"false\" src=\"assets/sweat.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">This popover is set to open on the bottom.</h3>\n<p class=\"text-center\">if you scroll the emoji to the bottom of the viewport, it will auto reflect to the top.</p>\n<p class=\"text-center\">scroll the page down to see it open on the bottom.</p>\n<div class=\"placement-reflection center-content\">\n    <popover-content #cryRef>\n        <h2>Loudly Crying Face</h2>\n        A sad face with tears streaming down both cheeks. This face is distraught and inconsolable. Not to be confused\n        with the <a href=\"https://emojipedia.org/face-with-tears-of-joy/\" target=\"_blank\">tears of joy emoji</a>.\n    </popover-content>\n    <img class=\"emoji\" height=\"75\" [popover]=\"cryRef\" popoverPlacement=\"bottom\" src=\"assets/cry.png\">\n</div>\n\n<br /><br />\n<h3 class=\"text-center\">Show in the body!</h3>\n<div class=\"center-content body-popover\">\n    <img class=\"emoji\" height=\"75\" [popoverOnHover]=\"false\" [popover]=\"'Message from body'\" [appendToBody]=\"true\" src=\"assets/tongue.png\">\n</div>\n\n<div style=\"height: 500px;\"></div>");
 
 /***/ }),
 
@@ -264,6 +264,7 @@ var PopoverContentComponent = /** @class */ (function () {
         this.animation = true;
         this.closeOnClickOutside = false;
         this.closeOnMouseOutside = false;
+        this.appendToBody = false;
         this.size = 'small';
         this.onCloseFromOutside = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.top = -10000;
@@ -320,6 +321,10 @@ var PopoverContentComponent = /** @class */ (function () {
     // -------------------------------------------------------------------------
     // Public Methods
     // -------------------------------------------------------------------------
+    PopoverContentComponent.prototype.onResize = function (event) {
+        this.windowWidth = window.innerWidth;
+        this.windowHeight = window.innerHeight;
+    };
     PopoverContentComponent.prototype.updatePosition = function () {
         // if visible, reposition
         if (this.opacity) {
@@ -360,7 +365,7 @@ var PopoverContentComponent = /** @class */ (function () {
         var positionStrParts = positionStr.split(' ');
         var pos0 = positionStrParts[0];
         var pos1 = positionStrParts[1] || 'center';
-        var hostElPos = appendToBody ? this.offset(hostEl) : this.position(hostEl);
+        var hostElPos = this.appendToBody || appendToBody ? this.offset(hostEl) : this.position(hostEl);
         var targetElWidth = targetEl.offsetWidth;
         var targetElHeight = targetEl.offsetHeight;
         this.effectivePlacement = pos0 = this.getEffectivePlacement(pos0, hostEl, targetEl);
@@ -495,113 +500,357 @@ var PopoverContentComponent = /** @class */ (function () {
     PopoverContentComponent.prototype.getEffectivePlacement = function (placement, hostElement, targetElement) {
         var hostElBoundingRect = hostElement.getBoundingClientRect();
         var desiredPlacement = placement || _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
-        // Reflect appropriately if overflow.
+        // Determines if a popover overflows in a direction when in a specific position.
+        var overflows = {
+            positionTop: {
+                top: hostElBoundingRect.top - targetElement.offsetHeight < 0,
+                right: hostElBoundingRect.left + hostElBoundingRect.width / 2 + targetElement.offsetWidth / 2 > this.windowWidth,
+                left: hostElBoundingRect.left + hostElBoundingRect.width / 2 - targetElement.offsetWidth / 2 < 0
+            },
+            positionTopRight: {
+                top: hostElBoundingRect.top - targetElement.offsetHeight < 0,
+                right: hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth
+            },
+            positionRight: {
+                top: hostElBoundingRect.top + hostElBoundingRect.height / 2 - targetElement.offsetHeight / 2 < 0,
+                right: hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth,
+                bottom: hostElBoundingRect.top + hostElBoundingRect.height / 2 + targetElement.offsetHeight / 2 > this.windowHeight
+            },
+            positionBottomRight: {
+                right: hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth,
+                bottom: hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight
+            },
+            positionBottom: {
+                right: hostElBoundingRect.left + hostElBoundingRect.width / 2 + targetElement.offsetWidth / 2 > this.windowWidth,
+                bottom: hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight,
+                left: hostElBoundingRect.left + hostElBoundingRect.width / 2 - targetElement.offsetWidth / 2 < 0
+            },
+            positionBottomLeft: {
+                bottom: hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight,
+                left: hostElBoundingRect.left - targetElement.offsetWidth < 0
+            },
+            positionLeft: {
+                left: hostElBoundingRect.left < targetElement.offsetWidth,
+                top: hostElBoundingRect.top + hostElBoundingRect.height / 2 - targetElement.offsetHeight / 2 < 0,
+                bottom: hostElBoundingRect.top + hostElBoundingRect.height / 2 + targetElement.offsetHeight / 2 > this.windowHeight
+            },
+            positionTopLeft: {
+                top: hostElBoundingRect.top - targetElement.offsetHeight < 0,
+                left: hostElBoundingRect.left - targetElement.offsetWidth < 0
+            }
+        };
         if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top) {
-            var isTopOverflow = hostElBoundingRect.top - targetElement.offsetHeight < 0;
-            var isRightOverflow = hostElBoundingRect.left + hostElBoundingRect.width / 2 + targetElement.offsetWidth / 2 > this.windowWidth;
-            var isLeftOverflow = hostElBoundingRect.left + hostElBoundingRect.width / 2 - targetElement.offsetWidth / 2 < 0;
-            if (isTopOverflow) {
+            // If it overflows on the top AND left, go to bottom-right.
+            if (overflows.positionTop.top && overflows.positionTop.left) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                // If it overflows on the top AND right, go to bottom-left.
+            }
+            else if (overflows.positionTop.top && overflows.positionTop.right) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                // If it only overflows on the top, go to bottom.
+            }
+            else if (overflows.positionTop.top) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                // If it only overflows to the right, go to top-left.
             }
-            else if (isRightOverflow) {
+            else if (overflows.positionTop.right) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                // If it only overflows to the left, go to top-right.
             }
-            else if (isLeftOverflow) {
+            else if (overflows.positionTop.left) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
             }
-        }
-        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom) {
-            var isRightOverflow = hostElBoundingRect.left + hostElBoundingRect.width / 2 + targetElement.offsetWidth / 2 > this.windowWidth;
-            var isLeftOverflow = hostElBoundingRect.left + hostElBoundingRect.width / 2 - targetElement.offsetWidth / 2 < 0;
-            var isBottomOverflow = hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight;
-            if (isBottomOverflow) {
+            else {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
-            }
-            else if (isRightOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
-            }
-            else if (isLeftOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
-            }
-        }
-        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left) {
-            var isTopOverflow = hostElBoundingRect.top + hostElBoundingRect.height / 2 - targetElement.offsetHeight / 2 < 0;
-            var isLeftOverflow = hostElBoundingRect.left - targetElement.offsetWidth < 0;
-            var isBottomOverflow = hostElBoundingRect.top + hostElBoundingRect.height / 2 + targetElement.offsetHeight / 2 > this.windowHeight;
-            if (isLeftOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
-            }
-            else if (isTopOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
-            }
-            else if (isBottomOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
-            }
-        }
-        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right) {
-            var isTopOverflow = hostElBoundingRect.top + hostElBoundingRect.height / 2 - targetElement.offsetHeight / 2 < 0;
-            var isRightOverflow = hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth;
-            var isBottomOverflow = hostElBoundingRect.top + hostElBoundingRect.height / 2 + targetElement.offsetHeight / 2 > this.windowHeight;
-            if (isRightOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
-            }
-            else if (isTopOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
-            }
-            else if (isBottomOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
             }
         }
         if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight) {
-            var isTopOverflow = hostElBoundingRect.top - targetElement.offsetHeight < 0;
-            var isRightOverflow = hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth;
-            if (isTopOverflow && isRightOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+            // If it overflows on the top AND the right, try in the order: bottom, Bottom-left, left.
+            if (overflows.positionTopRight.top && overflows.positionTopRight.right) {
+                if (overflows.positionBottom.bottom) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
+                }
+                else if (overflows.positionBottom.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+                // If it only overflows on the top, try in the order: right, bottom-right.
             }
-            else if (isTopOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+            else if (overflows.positionTopRight.top) {
+                if (overflows.positionRight.top) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
+                }
+                // If it only overflows on the right, try in the order: top, top-left.
             }
-            else if (isRightOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+            else if (overflows.positionTopRight.right) {
+                if (overflows.positionTop.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
             }
         }
-        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft) {
-            var isTopOverflow = hostElBoundingRect.top - targetElement.offsetHeight < 0;
-            var isLeftOverflow = hostElBoundingRect.left - targetElement.offsetWidth < 0;
-            if (isTopOverflow && isLeftOverflow) {
+        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right) {
+            // If it overflows on the right AND the top, try in the order: bottom-right, bottom, bottom-left.
+            if (overflows.positionRight.right && overflows.positionRight.top) {
+                if (overflows.positionBottomRight.right && overflows.positionBottom.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                }
+                else if (overflows.positionBottomRight.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                }
+                // If it overflows on the right AND the bottom, try in the order: top-right, top, top-left.
+            }
+            else if (overflows.positionRight.right && overflows.positionRight.bottom) {
+                if (overflows.positionTopRight.right && overflows.positionTop.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                }
+                else if (overflows.positionTopRight.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                }
+                // If it only overflows on the right, try all top positions from right to left, then try all bottom positions right to left.
+            }
+            else if (overflows.positionRight.right) {
+                if (overflows.positionTop.top) {
+                    if (overflows.positionBottom.right) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                    }
+                    else if (overflows.positionBottomRight.right) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                    }
+                    else {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                    }
+                }
+                else {
+                    if (overflows.positionTop.right) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                    }
+                    else if (overflows.positionTopRight.right) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                    }
+                    else {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                    }
+                }
+                // If it only over flows on the top, go bottom-right.
+            }
+            else if (overflows.positionRight.top) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                // If it only overflows on the bottom, go top-right.
             }
-            else if (isTopOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
-            }
-            else if (isLeftOverflow) {
+            else if (overflows.positionRight.bottom) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
             }
         }
         if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight) {
-            var isBottomOverflow = hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight;
-            var isRightOverflow = hostElBoundingRect.right + targetElement.offsetWidth > this.windowWidth;
-            if (isBottomOverflow && isRightOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+            // If it overflows on the bottom AND the right, try in the order: top, top-left, left.
+            if (overflows.positionBottomRight.bottom && overflows.positionBottomRight.right) {
+                if (overflows.positionTop.top) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
+                }
+                else if (overflows.positionTop.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+                // If it only overflows on the bottom, try in the order: right, top-right.
             }
-            else if (isBottomOverflow) {
+            else if (overflows.positionBottomRight.bottom) {
+                if (overflows.positionRight.bottom) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
+                }
+                // If it only overflows on the right, try in the order: bottom, bottom-left.
+            }
+            else if (overflows.positionBottomRight.right) {
+                if (overflows.positionBottom.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+            }
+        }
+        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom) {
+            // If it overflows on the bottom AND left, go to top-right.
+            if (overflows.positionBottom.bottom && overflows.positionBottom.left) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                // If it overflows on the bottom AND right, go to top-left.
             }
-            else if (isRightOverflow) {
+            else if (overflows.positionBottom.bottom && overflows.positionBottom.right) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                // If it only overflows on the bottom, go to top.
+            }
+            else if (overflows.positionBottom.bottom) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                // If it only overflows to the right, go to bottom-left.
+            }
+            else if (overflows.positionBottom.right) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                // If it only overflows to the left, go to bottom-right.
+            }
+            else if (overflows.positionBottom.left) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
             }
         }
         if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft) {
-            var isBottomOverflow = hostElBoundingRect.bottom + targetElement.offsetHeight > this.windowHeight;
-            var isLeftOverflow = hostElBoundingRect.left - targetElement.offsetWidth < 0;
-            if (isBottomOverflow && isLeftOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+            // If it overflows on the bottom AND the left, try in the order: top, top-right, right.
+            if (overflows.positionBottomLeft.bottom && overflows.positionBottomLeft.left) {
+                if (overflows.positionTop.top) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
+                }
+                else if (overflows.positionTop.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+                // If it only overflows on the bottom, try in the order: left, top-left.
             }
-            else if (isBottomOverflow) {
+            else if (overflows.positionBottomLeft.bottom) {
+                if (overflows.positionLeft.bottom) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
+                }
+                // If it only overflows on the left, try in the order: bottom, bottom-right.
+            }
+            else if (overflows.positionBottomLeft.left) {
+                if (overflows.positionBottom.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+            }
+        }
+        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left) {
+            // If it overflows on the left AND the top, try in the order: bottom-left, bottom, bottom-right.
+            if (overflows.positionLeft.left && overflows.positionLeft.top) {
+                if (overflows.positionBottomLeft.left && overflows.positionBottom.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                }
+                else if (overflows.positionBottomRight.right) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                }
+                // If it overflows on the left AND the bottom, try in the order: top-left, top, top-right.
+            }
+            else if (overflows.positionLeft.left && overflows.positionLeft.bottom) {
+                if (overflows.positionTopLeft.left && overflows.positionTop.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                }
+                else if (overflows.positionTopLeft.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                }
+                // If it only overflows on the left, try all top positions from left to right, then try all bottom positions left to right.
+            }
+            else if (overflows.positionLeft.left) {
+                if (overflows.positionTop.top) {
+                    if (overflows.positionBottom.left) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                    }
+                    else if (overflows.positionBottomLeft.left) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                    }
+                    else {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                    }
+                }
+                else {
+                    if (overflows.positionTop.left) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                    }
+                    else if (overflows.positionTopLeft.left) {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                    }
+                    else {
+                        return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
+                    }
+                }
+                // If it only over flows on the top, go bottom-left.
+            }
+            else if (overflows.positionLeft.top) {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                // If it only overflows on the bottom, go top-left.
+            }
+            else if (overflows.positionLeft.bottom) {
                 return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
             }
-            else if (isLeftOverflow) {
-                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
+            }
+        }
+        if (desiredPlacement === _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft) {
+            // If it overflows on the top AND the left, try in the order: bottom, Bottom-right, right.
+            if (overflows.positionTopLeft.top && overflows.positionTopLeft.left) {
+                if (overflows.positionBottom.bottom) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Right;
+                }
+                else if (overflows.positionBottom.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Bottom;
+                }
+                // If it only overflows on the top, try in the order: left, bottom-left.
+            }
+            else if (overflows.positionTopLeft.top) {
+                if (overflows.positionLeft.top) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].BottomLeft;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Left;
+                }
+                // If it only overflows on the left, try in the order: top, top-right.
+            }
+            else if (overflows.positionTopLeft.left) {
+                if (overflows.positionTop.left) {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopRight;
+                }
+                else {
+                    return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].Top;
+                }
+            }
+            else {
+                return _popover_placement__WEBPACK_IMPORTED_MODULE_2__["PopoverPlacement"].TopLeft;
             }
         }
         return desiredPlacement;
@@ -641,16 +890,26 @@ var PopoverContentComponent = /** @class */ (function () {
     ], PopoverContentComponent.prototype, "closeOnMouseOutside", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], PopoverContentComponent.prototype, "appendToBody", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
     ], PopoverContentComponent.prototype, "size", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('popoverDiv', { static: true }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])
     ], PopoverContentComponent.prototype, "popoverDiv", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:resize', ['$event']),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Function),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Object]),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:returntype", void 0)
+    ], PopoverContentComponent.prototype, "onResize", null);
     PopoverContentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'popover-content',
-            template: "\n    <div #popoverDiv\n        class=\"bs-popover-{{ effectivePlacement }} popover-content popover {{ parentClass }}\"\n        [ngClass]=\"{\n            'sm': size === 'small',\n            'md-sm': size === 'medium-small',\n            'md': size === 'medium',\n            'lg': size === 'large',\n            'in': isIn\n        }\"\n        [style.top.px]=\"top\"\n        [style.left.px]=\"left\"\n        [style.transition]=\"(transitionEnabled ? '0.15s opacity' : '')\"\n        [style.opacity]=\"opacity\"\n        [style.display]=\"'block'\"\n        [attr.aria-hidden]=\"opacity === 0\"\n        role=\"popover\">\n            <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n            <div class=\"arrow\"></div>\n            <div class=\"popover-header\" [hidden]=\"!title\">{{ title }}</div>\n            <div class=\"popover-body\">\n                <ng-content></ng-content>\n                {{ content }}\n            </div>\n    </div>\n    "
+            template: "\n        <div #popoverDiv\n            class=\"bs-popover-{{ effectivePlacement }} popover-content popover {{ parentClass }}\"\n            [ngClass]=\"{\n                'sm': size === 'small',\n                'md-sm': size === 'medium-small',\n                'md': size === 'medium',\n                'lg': size === 'large',\n                'in': isIn\n            }\"\n            [style.top.px]=\"top\"\n            [style.left.px]=\"left\"\n            [style.transition]=\"(transitionEnabled ? '0.15s opacity' : '')\"\n            [style.opacity]=\"opacity\"\n            [style.display]=\"'block'\"\n            [attr.aria-hidden]=\"opacity === 0\"\n            role=\"popover\">\n                <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n                <div class=\"arrow\"></div>\n                <div class=\"popover-header\" [hidden]=\"!title\">{{ title }}</div>\n                <div class=\"popover-body\">\n                    <ng-content></ng-content>\n                    {{ content }}\n                </div>\n        </div>\n    "
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"],
@@ -693,10 +952,12 @@ var PopoverDirective = /** @class */ (function () {
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------
-    function PopoverDirective(viewContainerRef, cdr, resolver) {
+    function PopoverDirective(viewContainerRef, cdr, resolver, appRef, injector) {
         this.viewContainerRef = viewContainerRef;
         this.cdr = cdr;
         this.resolver = resolver;
+        this.appRef = appRef;
+        this.injector = injector;
         // -------------------------------------------------------------------------
         // Properties
         // -------------------------------------------------------------------------
@@ -757,6 +1018,31 @@ var PopoverDirective = /** @class */ (function () {
             }
         }
     };
+    PopoverDirective.prototype.createComponent = function (component) {
+        var factory = this.resolver.resolveComponentFactory(component);
+        // Create a component reference from the component
+        var componentRef = this.appendToBody
+            ? factory.create(this.injector)
+            : this.viewContainerRef.createComponent(factory);
+        if (this.appendToBody) {
+            // Attach component to the appRef so that it's inside the ng component tree
+            this.appRef.attachView(componentRef.hostView);
+            // Get DOM element from component
+            var domElem = componentRef.hostView
+                .rootNodes[0];
+            // Append DOM element to the body
+            document.body.appendChild(domElem);
+        }
+        return componentRef;
+    };
+    PopoverDirective.prototype.removeComponent = function (componentRef) {
+        if (this.popover) {
+            if (this.appendToBody) {
+                this.appRef.detachView(componentRef.hostView);
+            }
+            componentRef.destroy();
+        }
+    };
     // -------------------------------------------------------------------------
     // Public Methods
     // -------------------------------------------------------------------------
@@ -775,11 +1061,10 @@ var PopoverDirective = /** @class */ (function () {
         }
         this.visible = true;
         if (typeof this.content === 'string') {
-            var factory = this.resolver.resolveComponentFactory(this.popoverContentComponent);
             if (!this.visible) {
                 return;
             }
-            this.popover = this.viewContainerRef.createComponent(factory);
+            this.popover = this.createComponent(this.popoverContentComponent);
             var popover = this.popover.instance;
             popover.popover = this;
             popover.content = this.content;
@@ -801,6 +1086,7 @@ var PopoverDirective = /** @class */ (function () {
             if (this.popoverSize) {
                 popover.size = this.popoverSize;
             }
+            popover.appendToBody = this.appendToBody;
             popover.onCloseFromOutside.subscribe(function () { return _this.hide(); });
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time
             if (this.popoverDismissTimeout > 0) {
@@ -828,6 +1114,7 @@ var PopoverDirective = /** @class */ (function () {
             if (this.popoverSize) {
                 popover.size = this.popoverSize;
             }
+            popover.appendToBody = this.appendToBody;
             popover.onCloseFromOutside.subscribe(function () { return _this.hide(); });
             // if dismissTimeout option is set, then this popover will be dismissed in dismissTimeout time
             if (this.popoverDismissTimeout > 0) {
@@ -843,9 +1130,7 @@ var PopoverDirective = /** @class */ (function () {
             return;
         }
         this.visible = false;
-        if (this.popover) {
-            this.popover.destroy();
-        }
+        this.removeComponent(this.popover);
         if (this.content instanceof _popover_content_component__WEBPACK_IMPORTED_MODULE_2__["PopoverContentComponent"]) {
             this.content.hideFromPopover();
         }
@@ -858,7 +1143,9 @@ var PopoverDirective = /** @class */ (function () {
     PopoverDirective.ctorParameters = function () { return [
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"] },
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"] }
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"] },
+        { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"] }
     ]; };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('popover'),
@@ -901,6 +1188,10 @@ var PopoverDirective = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], PopoverDirective.prototype, "popoverDismissTimeout", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)
+    ], PopoverDirective.prototype, "appendToBody", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
     ], PopoverDirective.prototype, "onShown", void 0);
@@ -941,7 +1232,9 @@ var PopoverDirective = /** @class */ (function () {
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"],
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"]])
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"]])
     ], PopoverDirective);
     return PopoverDirective;
 }());
@@ -1205,7 +1498,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rmusk/code/ngx-smart-popover/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/tbottonari/code/ngx-smart-popover/src/main.ts */"./src/main.ts");
 
 
 /***/ })
