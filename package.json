@@ -1,6 +1,6 @@
 {
     "name": "ngx-smart-popover-demo",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -29,7 +29,7 @@
         "@angular/router": "8.2.14",
         "bootstrap": "4.3.1",
         "core-js": "2.6.4",
-        "node-sass": "4.13.1",
+        "node-sass": "4.14.1",
         "rxjs": "6.5.4",
         "zone.js": "0.8.29"
     },
