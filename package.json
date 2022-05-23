@@ -1,6 +1,6 @@
 {
     "name": "ngx-smart-popover-demo",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "resolutions": {
         "normalize-url": "6.1.0",
         "serialize-javascript": "6.0.0",
