@@ -8,16 +8,20 @@ $popover-arrow-outer-color: fade-in($popover-bg, .05) !default;
 $popover-arrow-color: $popover-bg !default;
 $popover-header-bg: darken($popover-bg, 3%) !default;
 $popover-border-width: 0rem !default;
+$popover-border-color: black !default;
 $popover-border-radius: 0rem !default;
 $popover-box-shadow: 0 .25rem .5rem rgba(black, .2) !default;
 $popover-body-color: white !default;
+$popover-body-font-size: 1rem !default;
 $popover-header-color: white !default;
+$popover-header-font-size: 1.6rem !default;
+$popover-target-offset: 0.5rem !default;
 $font-family: 'Helvetica' !default;
 
 @mixin fix-arrow-position-for-retina($direction) {
     .arrow {
         &:before, &:after {
-            #{$direction}: 1px !important;   // Fix visual gap on retina displays
+            #{$direction}: 0px !important;   // Fix visual gap on retina displays
         }
     }
 }
@@ -44,8 +48,7 @@ $font-family: 'Helvetica' !default;
 
 .popover.popover-content {
     background-color: $popover-bg;
-    box-shadow: 0 .2rem .4rem 0 rgba(0,0,0,0.15);
-    border: none;
+    border: $popover-border-width solid $popover-border-color;;
     padding: $popover-inner-padding;
     z-index: $zindex-popover;
     max-width: none;
@@ -87,33 +90,33 @@ $font-family: 'Helvetica' !default;
 
     .popover-header {
         color: $popover-header-color;
-        font-size: 1.6rem;
+        font-size: $popover-header-font-size;
         font-weight: bold;
         line-height: 2.1rem;
     }
 
     .popover-body {
         color: $popover-body-color;
-        font-size: 1rem;
+        font-size: $popover-body-font-size;
         line-height: 1.3rem;
     }
 
     &.bs-popover {
         // These margins all define distance from the target to render
         &-left {
-            margin-left: -$popover-arrow-width * 1.5;
+            margin-left: calc(-#{$popover-arrow-height} - #{$popover-target-offset});
             @include fix-arrow-position-for-retina(right);
         }
         &-right {
-            margin-left: $popover-arrow-width * 1.5;
+            margin-left: calc(#{$popover-arrow-height} + #{$popover-target-offset});
             @include fix-arrow-position-for-retina(left);
         }
         &-top, &-top-right, &-top-left {
-            margin-top: -$popover-arrow-height * 1.5;
+            margin-top: calc(-#{$popover-arrow-height} - #{$popover-target-offset});
             @include fix-arrow-position-for-retina(bottom);
         }
         &-bottom, &-bottom-right, &-bottom-left {
-            margin-top: $popover-arrow-height * 1.5;
+            margin-top: calc(#{$popover-arrow-height} + #{$popover-target-offset});
             @include fix-arrow-position-for-retina(top);
         }
 
@@ -150,7 +153,7 @@ $font-family: 'Helvetica' !default;
             }
 
             .arrow::after {
-                left: $popover-border-width;
+                left: $popover-border-width !important;
                 border-right-color: $popover-arrow-color;
             }
         }
@@ -174,7 +177,7 @@ $font-family: 'Helvetica' !default;
             }
 
             .arrow::after {
-                right: $popover-border-width;
+                right: $popover-border-width !important;
                 border-left-color: $popover-arrow-color;
             }
         }
@@ -195,7 +198,7 @@ $font-family: 'Helvetica' !default;
             }
 
             .arrow::after {
-                bottom: $popover-border-width;
+                bottom: $popover-border-width !important;
                 border-top-color: $popover-arrow-color;
             }
         }
@@ -216,7 +219,7 @@ $font-family: 'Helvetica' !default;
             }
 
             .arrow::after {
-                top: $popover-border-width;
+                top: $popover-border-width !important;
                 border-bottom-color: $popover-arrow-color;
             }
 
