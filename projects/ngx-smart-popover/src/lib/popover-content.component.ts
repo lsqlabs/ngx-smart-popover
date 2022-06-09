@@ -114,6 +114,15 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
     // -------------------------------------------------------------------------
 
     public ngAfterViewInit(): void {
+        this.show();
+        this.cdr.detectChanges();
+    }
+
+    public ngOnDestroy(): void {
+        this.removeListener()
+    }
+
+    public addListener(): void {
         if (this.closeOnClickOutside) {
             this.listenClickFunc = this.renderer.listen('document', 'mousedown', (event: any) => this.onDocumentMouseDown(event));
         }
@@ -122,12 +131,9 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         }
         // Always close on mobile touch event outside.
         this.listenTouchFunc = this.renderer.listen('document', 'touchstart', (event: any) => this.onDocumentMouseDown(event));
-
-        this.show();
-        this.cdr.detectChanges();
     }
-
-    public ngOnDestroy(): void {
+    
+    public removeListener(): void {
         if (this.closeOnClickOutside && this.listenClickFunc) {
             this.listenClickFunc();
         }
@@ -169,6 +175,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         this.isIn = true;
         this.transitionEnabled = true;
         this.opacity = 1;
+        this.addListener()
     }
 
     public hide(): void {
@@ -176,6 +183,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         this.left = -10000;
         this.isIn = true;
         this.popover.hide();
+        this.removeListener()
     }
 
     public hideFromPopover(): void {
@@ -184,6 +192,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         this.isIn = true;
         this.transitionEnabled = false;
         this.opacity = 0;
+        this.removeListener()
     }
 
     // -------------------------------------------------------------------------
