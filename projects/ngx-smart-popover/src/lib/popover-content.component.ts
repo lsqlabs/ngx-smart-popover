@@ -3,6 +3,8 @@
  * @Reference {github} https://github.com/pleerock/ngx-popover
  */
 
+import { DOCUMENT } from '@angular/common';
+import { Inject } from '@angular/core';
 import {
     AfterViewInit,
     ChangeDetectorRef,
@@ -104,7 +106,8 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
     // Constructor
     // -------------------------------------------------------------------------
 
-    constructor(protected element: ElementRef,
+    constructor(@Inject(DOCUMENT) private document: Document,
+                protected element: ElementRef,
                 protected cdr: ChangeDetectorRef,
                 protected renderer: Renderer2) {
     }
@@ -122,7 +125,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         }
         // Always close on mobile touch event outside.
         this.listenTouchFunc = this.renderer.listen('document', 'touchstart', (event: any) => this.onDocumentMouseDown(event));
-
+  
         this.show();
         this.cdr.detectChanges();
     }
@@ -138,7 +141,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
             this.listenTouchFunc();
         }
     }
-
+    
     // -------------------------------------------------------------------------
     // Public Methods
     // -------------------------------------------------------------------------
@@ -158,6 +161,23 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         }
     }
 
+    public moveToBody(): void {
+        this.renderer.removeChild(
+            this.document.body,
+            this.element.nativeElement,
+            true
+        );
+        this.renderer.appendChild(this.document.body, this.element.nativeElement);
+      }
+    
+    public remove(): void {
+        this.renderer.removeChild(
+            this.document.body,
+            this.element.nativeElement,
+            true
+        );
+    }
+
     public show(): void {
         if (!this.popover || !this.popover.getElement()) {
             return;
@@ -169,13 +189,15 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         this.isIn = true;
         this.transitionEnabled = true;
         this.opacity = 1;
+        if (this.appendToBody) this.moveToBody();
     }
 
     public hide(): void {
         this.top = -10000;
         this.left = -10000;
         this.isIn = true;
-        this.popover.hide();
+        this.popover.hide(); 
+        if (this.appendToBody) this.remove();
     }
 
     public hideFromPopover(): void {
@@ -184,6 +206,7 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         this.isIn = true;
         this.transitionEnabled = false;
         this.opacity = 0;
+        if (this.appendToBody) this.remove();
     }
 
     // -------------------------------------------------------------------------
