@@ -182,14 +182,14 @@ export class PopoverContentComponent implements AfterViewInit, OnDestroy {
         if (!this.popover || !this.popover.getElement()) {
             return;
         }
-
+        if (this.appendToBody) this.moveToBody();
+        
         const p = this.positionElements(this.popover.getElement(), this.popoverDiv.nativeElement, this.placement);
         this.top = p.top;
         this.left = p.left;
         this.isIn = true;
         this.transitionEnabled = true;
         this.opacity = 1;
-        if (this.appendToBody) this.moveToBody();
     }
 
     public hide(): void {
