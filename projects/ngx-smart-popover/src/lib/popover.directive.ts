@@ -29,8 +29,8 @@ import { PopoverPlacement } from './popover.placement';
 * @component Popover Directive
 */
 @Directive({
-    selector: '[popover]',
-    exportAs: 'popover'
+    selector: '[ngx-popover]',
+    exportAs: 'ngx-popover'
 })
 export class PopoverDirective implements OnChanges {
     // -------------------------------------------------------------------------
@@ -54,7 +54,7 @@ export class PopoverDirective implements OnChanges {
     // -------------------------------------------------------------------------
     // Inputs / Outputs
     // -------------------------------------------------------------------------
-    @Input('popover') public content: string | PopoverContentComponent;
+    @Input('ngx-popover') public content: string | PopoverContentComponent;
     @Input() public popoverSize: 'small' | 'medium-small' | 'medium' | 'large' | 'auto';
     @Input() public popoverDisabled: boolean;
     @Input() public popoverAnimation: boolean;
