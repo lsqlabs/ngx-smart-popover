@@ -1,5 +1,5 @@
 {
-    "name": "ngx-smart-popover",
+    "name": "@yarle/ngx-smart-popover",
     "version": "1.6.0",
     "repository": {
         "type": "git",
@@ -30,8 +30,8 @@
     },
     "homepage": "https://github.com/YarleSoftware/ngx-smart-popover#readme",
     "peerDependencies": {
-        "@angular/common": ">=6.0.0",
-        "@angular/core": ">=6.0.0",
+        "@angular/common": ">=9.0.0",
+        "@angular/core": ">=9.0.0",
         "bootstrap": "^4.0.0"
     }
 }
