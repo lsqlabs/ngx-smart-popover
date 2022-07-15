@@ -19,4 +19,4 @@ import { CommonModule } from '@angular/common';
         PopoverContentComponent
     ]
 })
-export class PopoverModule { }
+export class NgxPopoverModule { }
