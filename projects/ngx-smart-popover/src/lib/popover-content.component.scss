@@ -62,6 +62,7 @@ $font-family: 'Helvetica' !default;
         width: $popover-arrow-width;
         height: $popover-arrow-height;
         margin: 0 !important;
+        z-index: 2;
 
         &::before,
         &::after {
