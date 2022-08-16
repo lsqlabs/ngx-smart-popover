@@ -74,6 +74,11 @@ Example of usage with dynamic html content:
     * `[closeOnMouseOutside]="true|false"` Indicates if popover should be closed when user mouse outside of it. Default is **false**.
     * `[closeOnClickOutside]="true|false"` Indicates if popover should be closed when you click outside of it. Default is **false**.
 
+## Publishing Updates to npm
+1. Make sure you are logged in via cli to the npm account that owns the package (if you work at LSQ Funding, check the 1Password vault).
+2. Increment the version number in [projects/ngx-smart-popover/package.json](https://github.com/lsqlabs/ngx-smart-popover/blob/master/projects/ngx-smart-popover/package.json) appropriately.
+2. `npm run build:lib`
+3. `npm run publish`
 ## Styles
 Import the bootstrap styles as a starting point. This module ships with both a CSS file as well as an SCSS file. In order to be able to use the diagonal positions (`top-right`, `bottom-right`, `top-left`, `bottom-left`) you must import one of these two stylesheets. It will ensure that your arrow is centered via CSS (bootstrap handles this in Javascript). The SASS file is provided in case you have overwritten any of the bootstrap SASS variables and want to compile with the non-default values.
 
