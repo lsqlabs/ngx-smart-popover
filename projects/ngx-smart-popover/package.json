@@ -1,6 +1,6 @@
 {
     "name": "@yarle/ngx-smart-popover",
-    "version": "1.6.6",
+    "version": "1.6.10",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/YarleSoftware/ngx-smart-popover.git"
