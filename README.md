@@ -102,7 +102,7 @@ import {PopoverModule} from "ngx-smart-popover";
     </p>
 
     <br/>
-    <button popover="Hello popover. Now click outside." [popoverCloseOnClickOutside]="true">
+    <button popover="Hello popover. Now click outside." [popoverCloseOnClickOutside]="true" [popoverOnHover]="false">
         click to open popover that will be closed when you click outside of it.
     </button>
 
